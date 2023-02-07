@@ -1,57 +1,63 @@
-main{
+section:first-child{
     background-color: rgb(201, 199, 199);
     border-radius: 20px;
-    margin: 7rem;
+    margin: 2rem;
     font-family: 'Raleway', sans-serif;
-    /* width: 70rem; */
+    height: 39rem;
+    width: 54rem;
 
 }
 .bloccarte{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 figure{
     background-color: white;
-    width: 20rem;
-    height: 15rem;
+    width: 15rem;
+    height: 12rem;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin: 1rem ;
+    margin: 1rem;
 }
 
 img{
-    width: 19rem;
-    height: 9rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0.5rem;
+    /* width: 19rem; */
+    height: 55%;
+    background-size: contain;
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 0.5rem;
     border-radius: 20px 20px 0 0;
 }
 
 ul{
     list-style: none;
     margin-left: -1.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0;
 }
 li:first-child{
-    font-size: 21px;
+    font-size: 15px;
     font-weight: bold;
 }
 li:nth-child(2){
+    font-size: 13px;
     padding-top: 0.3rem;
 }
 li:nth-child(3){
+    font-size: 13px;
     color: blue;
+    padding-top: 0.3rem;
 }
 h1{
-    margin-left: 8rem;  
+    padding-left: 2.5rem;  
     padding-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 h2{
-    margin-left: 8rem;
+    font-size: 16px;
+    padding-left: 2.5rem;
     padding-bottom: 3rem;
 }
