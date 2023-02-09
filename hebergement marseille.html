@@ -3,20 +3,22 @@
 <head>
     <meta charset="utf-8" >
     <title>Hébergement Marseille</title>
-    <link href="Hebergement marseille.css" rel="stylesheet" >
+    <link href="hebergement_marseille.css" rel="stylesheet" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/dd12bbf080.js" crossorigin="anonymous"></script>
 </head>
 <body> 
     <main> 
         <section class="section1">
             <h1>Hébergements à Marseille</h1>
-            <div class="bloccarte">
+            <div class="section1__carte">
             <figure>
                 <img src="img/la_cannebiere.jpg" alt="chambre de la cannebière">
-                <ul>
+                <ul class="section1__carte--detail">
                     <li>Auberge La Cannebière</li>
                     <li>Nuit à partir de 25€</li>
                     <li><i class="fa-solid fa-star"></i>
@@ -28,7 +30,7 @@
             </figure>
             <figure>
                 <img src="img/hotel_du_port.jpg" alt="chambre hotel du port">
-                <ul>
+                <ul class="section1__carte--detail">
                     <li>Hôtel du port</li>
                     <li>Nuit à partir de 52€</li>
                     <li></li>
@@ -36,7 +38,7 @@
             </figure>
             <figure>
                 <img src="img/les_mouettes.jpg" alt="chambre les mouettes">
-                <ul>
+                <ul class="section1__carte--detail">
                     <li>Hôtel les mouettes</li>
                     <li>Nuit à partir de 76€</li>
                     <li></li>
@@ -44,7 +46,7 @@
             </figure>
             <figure>
                 <img src="img/la_mer.jpg" alt="chambre la mer">
-                <ul>
+                <ul class="section1__carte--detail">
                     <li>Hôtel de la mer</li>
                     <li>Nuit à partir de 46€</li>
                     <li></li>
@@ -52,7 +54,7 @@
             </figure>
             <figure>
                 <img src="img/le_panier.jpg" alt="chambre le panier">
-                <ul>
+                <ul class="section1__carte--detail">
                     <li>Auberge le panier</li>
                     <li>Nuit à partir de 23€</li>
                     <li></li>
@@ -60,7 +62,7 @@
             </figure>
             <figure>
                 <img src="img/amina.jpg" alt="chambre chez Amina">
-                <ul>
+                <ul class="section1__carte--detail">
                     <li>Hôtel chez Amina</li>
                     <li>Nuit à partir de 96€</li>
                     <li></li>
@@ -71,10 +73,10 @@
         </section>
         <aside>
             <h1>Les plus populaires</h1>
-            <div class="bloccarteaside">
+            <div class="aside__carte">
             <figure>
                 <img src="img/le_soleil.jpg" alt="">
-                <ul>
+                <ul class="aside__carte--detail">
                     <li>Hôtel le soleil du matin</li>
                     <li>Nuit à partir de 128€</li>
                     <li></li>
@@ -82,7 +84,7 @@
             </figure>
             <figure>
                 <img src="img/au_coeur.jpg" alt="">
-                <ul>
+                <ul class="aside__carte--detail">
                     <li>Chambres d'hôtes au coeur de l'eau</li>
                     <li>Nuit à partir de 71€</li>
                     <li></li>
@@ -90,7 +92,7 @@
             </figure>
             <figure>
                 <img src="img/bleu_blanc.jpg" alt="">
-                <ul>
+                <ul class="aside__carte--detail">
                     <li>Hôtel bleu et blanc</li>
                     <li>Nuit à partir de 68€</li>
                     <li></li>
@@ -100,7 +102,7 @@
         </aside>
         <section class="section2">   
             <h1>Activités à Marseille</h1>
-            <div class="bloccarte2">
+            <div class="section2__carte">
             <figure>
                 <img src="img/vieux_port.jpg" alt="">
                 <figcaption>Vieux-Port</figcaption>
@@ -120,6 +122,25 @@
             </div>
         </section>
     </main>
-    
+    <footer>
+        <div class="apropos">
+            <ul class="apropos__ul">
+                <h3>A propos</H3>
+                <li><a href="https://www.afec.fr/">Fonctionnement du Site</a></li>
+                <li>Générale de vente</li>
+                <li>Données et confidentialité</li>
+            </ul>
+            <ul class="apropos__ul">
+                <h3>Nos Hébérgements</h3>
+                <li>Chaque qualité</li>
+                <li>Soumettre votre hotel</li>
+            </ul>
+            <ul class="apropos__ul">
+                <h3>Assistance</h3>
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
