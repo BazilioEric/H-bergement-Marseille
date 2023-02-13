@@ -3,8 +3,8 @@ main{
     flex-wrap: wrap;
     font-family: 'Raleway', sans-serif;
     justify-content: center;
-    height: 83rem;
-    width: 93rem;
+    height: 100%;
+    width: 100%;
 }
 
 /* Section1 et 2 and Aside */
@@ -17,30 +17,15 @@ main{
     display: flex;
     flex-direction: column;
     margin: 1rem;
-
 }
-
-
 
 /* Section1 and Aside */
 
 .section1, aside{
     background-color: rgb(201, 199, 199);
     border-radius: 20px;
-    /* margin-right: 4rem;
-    margin-left: 2rem; */
     height: 39rem;
     width: 54rem;
-}
-
-.section1 figure, aside figure, .section2 figure{
-    background-color: white;
-    width: 15rem;
-    height: 12rem;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
 }
 
 .section1__carte, .aside__carte{
@@ -61,17 +46,17 @@ main{
 }
 .section1 li:nth-child(2), aside li:nth-child(2){
     font-size: 13px;
-    padding-top: 0.3rem;
+    padding-top: 0.2rem;
 }
 
 .section1 li:nth-child(3), aside li:nth-child(3){
     font-size: 13px;
     color: blue;
-    padding-top: 0.3rem;
+    padding-top: 0.2rem;
 } 
 
 .section1 h1, aside h1{
-    padding-left: 3rem;  
+    padding-left: 2.5rem;  
     padding-top: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -118,7 +103,7 @@ aside img{
 }
 
 aside figure{
-    width: 22rem;
+    width: 21rem;
     height: 8rem;
     display: flex;
     flex-direction: row;
@@ -142,7 +127,7 @@ aside ul{
 }
 
 .section2 h1{
-    padding-left: 2rem;  
+    padding-left: 1.5rem;  
     padding-top: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -172,13 +157,18 @@ aside ul{
 
 /* Footer */
 
-.apropos{
-    display: flex;
-    justify-content: flex-start;
+footer{
+    
     background-color: lightgray;
-    margin-left: 2rem; 
     width: 82rem;
     height: 15rem;
+    margin-left: 2rem;
+}
+
+
+.apropos{
+    display: flex;
+    width: 80%; 
 }
 
 .apropos h3{
@@ -189,6 +179,112 @@ aside ul{
     font-size: 19px;
     line-height: 1.9rem;
     list-style: none;
-    margin-left: 2rem;
-    margin-right: 9rem;
+    padding-left: 2rem;
+    padding-right: 9rem;
 }
+
+/* Responsive for 1450pwx max */
+
+@media all and (max-width: 1450px) {
+    .section1{
+        width: 55%;
+    }
+
+    .section1__carte figure{
+        width: 25%;
+    }
+    
+    aside { 
+        width: 27% ;
+    }
+
+    aside ul{
+
+
+    }
+    .section2__carte figure{
+        width: 20%;
+    }
+
+    footer{
+        width: 90%;
+        height: 100%;
+    }
+
+    .apropos{
+        width: 100%;
+    }
+
+    .apropos ul{
+        padding-left: 2rem;
+        padding-right: 4rem;
+    }
+}   
+
+@media all and (max-width: 1200px){
+    .section1 li:first-child,  aside li:first-child{
+        font-size: 11px;
+    }
+    .section1 li:nth-child(2), aside li:nth-child(2), .section1 li:nth-child(3), aside li:nth-child(3){
+        font-size: 10px;
+    }
+}
+
+
+/* Responsive for tablet */
+
+@media all and (max-width: 750px) {
+    body{
+        justify-content: center;
+    }
+    .section1{
+        width: 95%;
+        margin: 0;
+    }
+    aside{
+        width: 95%;
+        height: 25%;
+        margin: 0;
+        margin-top: 4rem;
+    }
+    .aside__carte{
+        flex-direction: row;
+        margin-bottom: 2em;
+    }
+    aside h1{
+        margin: 0;
+        padding-bottom: 1em;
+    }
+    aside figure{
+        width: 30%;
+        margin: 0.5em;
+    }
+    /* aside li:first-child{
+        font-size: 9px;
+    }
+    aside li:nth-child(2), aside li:nth-child(3){
+        font-size: 8px;
+    } */
+    .section2{
+        width: 100%;
+        height: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section2 figure{
+        width: 20%;
+        height: auto;
+    }
+    .apropos{ 
+        width: 90%;
+    }
+    .apropos ul{
+        padding-left: 1rem;
+        padding-right: 2rem;
+        font-size: 15px;
+    } 
+}
+
+/* Responsive for mobile */
+
+/* 560px */
